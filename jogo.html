@@ -2,22 +2,25 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-		<title>Estourando balões</title>
+		<title>Estourando Balões</title>
 
 		<script src="jogo.js"></script>
 
 	</head>
 
 	<body onload="iniciaJogo()">
-		<div style="float:left; width:auto; height:500px; background:#fff; border: solid 1px #ccc; margin-right: 5px; padding: 5px;">
+		<div class="iniciado">
 			<table>
 				<tr>
 					<td>
 						<img src="imagens/balao_azul_grande.png" alt="" srcset="">
 					</td>
 					<td>
-						<span id="baloes_inteiros" style="font-size:30px; font-weight:bold"></span>
+						<span id="baloes_inteiros" class="baloes_inteiros"></span>
 					</td>
 				</tr>
 			</table>
@@ -28,24 +31,21 @@
 						<img src="imagens/balao_azul_grande_estourado.png" alt="" srcset="">
 					</td>
 					<td>
-						<span id="baloes_estourados" style="font-size:30px; font-weight:bold"></span>
+						<span id="baloes_estourados" class="baloes_inteiros"></span>
 					</td>
 				</tr>
 			</table>
 			<br>
-			<table style="width: 140px; height:132px;">
+			<table class="cronometro">
 				<tr>
-					<td style="background:url('imagens/cronometro.png'); text-align: center;">
-						<span id="cronometro" style="color: red; font-size:30px; font-weight:bold;"></span>	
+					<td class="cronometro__td">
+						<span class="cronometro__td-span" id="cronometro"></span>	
 					</td>
-	
 				</tr>
 			</table>
 		</div>
 
-		<div id="cenario" style="float:left; width:600px; height:500px; background:url('imagens/cenario.png'); background-position: bottom">
-
-		</div>
+		<div id="cenario" class="cenario"></div>
 	</body>
 	
 </html>

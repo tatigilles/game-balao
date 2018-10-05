@@ -7,15 +7,15 @@ function iniciaJogo(){
     var tempo_segundos = 0;
 
     if(nivel_jogo ==1){
-        tempo_segundos = 120;
+        tempo_segundos = 150;
     }
 
     if(nivel_jogo ==2){
-        tempo_segundos = 60;
+        tempo_segundos = 90;
     }
 
     if(nivel_jogo ==3){
-        tempo_segundos = 10;
+        tempo_segundos = 60;
     }
 
     // Segundos no spam
@@ -23,7 +23,7 @@ function iniciaJogo(){
     document.getElementById('cronometro').innerHTML = tempo_segundos;
 
     //  Quatidade de baloes
-    var qtde_baloes = 10;
+    var qtde_baloes = 120;
 
     cria_baloes(qtde_baloes);
 
@@ -61,7 +61,7 @@ function cria_baloes(qtde_baloes){
 
         var balao = document.createElement("img");
         balao.src = 'imagens/balao_azul_pequeno.png';
-        balao.style.margin = '10px';
+        balao.style.margin = '20px';
         balao.id = 'b'+i;
         balao.onclick = function(){ estourar(this); };
 

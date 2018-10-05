@@ -2,8 +2,11 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-		<title>Estourando balões</title>
+		<title>Estourando Balões</title>
 
 		<script language='Javascript'>
 			function iniciaJogo(){
@@ -14,17 +17,22 @@
 	</head>
 
 	<body>
-		<div>
-			<p>
-				<b>Nível: </b>
-				<select id="nivel_jogo">
-					<option value="1">Fácil</option>
-					<option value="2">Normal</option>
-					<option value="3">Díficil</option>
-				</select>
-			</p>
-			<br>
-			<img src="imagens/iniciar.png" onclick='iniciaJogo()' alt="">
+		<div class="inicio">
+			<h1>Jogo de Estourar Balão</h1>
+			<div class="inicio__menu">
+				<p class="inicio__nivel">
+					<b>Nível: </b>
+					<select id="nivel_jogo">
+						<option value="1">Fácil</option>
+						<option value="2">Normal</option>
+						<option value="3">Díficil</option>
+					</select>
+				</p>
+				<br>
+				<div class="inicio__imagem">
+					<img src="imagens/iniciar.png" onclick='iniciaJogo()' alt="">
+				</div>
+			</div>
 		</div>
 	</body>
 	
